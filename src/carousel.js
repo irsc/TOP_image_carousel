@@ -30,9 +30,11 @@ function currentImage(index){
     showImage(imgIndex = index);
 }
 
-function getImgIndex(){
-    return imgIndex;
+function showCarousel(){
+    showImage(imgIndex);
+    imgIndex++;
+    setTimeout(showCarousel, 5000);
 }
 
-export {showImage, nextImage, prevImage, currentImage}
+export {showImage, nextImage, prevImage, currentImage, showCarousel}
 

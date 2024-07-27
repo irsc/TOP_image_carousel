@@ -1,4 +1,4 @@
-import {showImage, prevImage, nextImage, currentImage} from './carousel';
+import {showImage, prevImage, nextImage, currentImage, showCarousel} from './carousel';
 import './dom-elements';
 
 let dots = document.getElementsByClassName("dot");
@@ -15,6 +15,6 @@ Array.from(dots).forEach(element => {
 
 
 window.addEventListener("load", ()=>{
-    showImage(1);
+    showCarousel();
 })
 
